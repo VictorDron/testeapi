@@ -1,15 +1,16 @@
 function cot () {
     
-    let time = '5m';
     const ajax = new XMLHttpRequest();
-    ajax.open('GET', 'https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=time');
+    ajax.open('GET', 'https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1m');
     ajax.send();
 
     ajax.onload = function () {
         let obj = JSON.parse(this.responseText);
-        let price = obj[498];
-        let price0 = price[4]
+        let price = obj[499];
+        let price0 = price[1]
         console.log(price0);
+        document.getElementById('texto').innerHTML = price0;
+
     }
     
 }

@@ -7,7 +7,7 @@ function cot () {
     ajax.onload = function () {
         let obj = JSON.parse(this.responseText);
         let price = obj[499];
-        let price0 = price[1]
+        let price0 = price[4]
         console.log(price0);
         document.getElementById('texto').innerHTML = price0;
 

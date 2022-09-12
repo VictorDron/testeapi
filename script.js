@@ -5,9 +5,10 @@ function cot () {
     ajax.send();
 
     ajax.onload = function () {
+        
         let obj = JSON.parse(this.responseText);
         let price = obj[499];
-        let price0 = price[4]
+        let price0 = parseFloat(price[4]);
         console.log(price0);
         document.getElementById('texto').innerHTML = price0;
 

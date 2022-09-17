@@ -6,13 +6,21 @@ function cot () {
 
     ajax.onload = function () {
         
+
+
         let obj = JSON.parse(this.responseText);
-        let price = obj[499];
-        let price0 = parseFloat(price[4]);
+        let price1 = obj[499];
+        let price0 = parseFloat(price1[4]);
         console.log(price0);
         document.getElementById('texto').innerHTML = price0;
+        
+        const closes = obj.data.map(candle => parseFloat(candle[4]))
+        let rsi = parseFloat(calcRSI(closes));
+        document.getElementById('texto1').innerHTML = rsi;
 
     }
+
+    
     
 }
     

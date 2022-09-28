@@ -49,8 +49,6 @@ async function cot () {
         if (rsi > 50) {
             document.getElementById('img_eth').style.backgroundColor ='red';
             
-        }else{
-            document.getElementById('img_eth').style.backgroundColor = 'yellow';
         }
     }
     

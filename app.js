@@ -35,14 +35,23 @@ async function cot () {
         console.log(rsi);
         document.getElementById('rsia').innerHTML = rsi+'%';
         
+        var buy = [0];
+        var sell = [0];
 
-        if (rsi < 18.00) {
+        if (rsi < 18) {
+
            document.getElementById('rsi1').style.backgroundColor ='green';
+
         }
 
-        if (rsi > 60.00) {
+        if (rsi > 50) {
             document.getElementById('rsi1').style.backgroundColor ='red';
+            
         }
+
+        
+
+        
 
        
     }

@@ -3,7 +3,7 @@ function calcRSI(closes) {
     let gains = 0;
     let losses = 0;
     
-    for(let i = closes.length - 6; i < closes.length; i++){
+    for(let i = closes.length - 10; i < closes.length; i++){
         const diff = closes[i] - closes [i - 1];
         if (diff >= 0)
            gains += diff;
@@ -15,7 +15,7 @@ function calcRSI(closes) {
     
 }
 
-function cot () {
+async function cot () {
     
     const ajax = new XMLHttpRequest();
     ajax.open('GET', 'https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1m');
@@ -30,11 +30,10 @@ function cot () {
         console.log(obj.length);
         document.getElementById('texto2').innerHTML = price0;
         
-        const closes = closes.data.map(candle => parseFloat(candle[4]))
-        let rsi = parseFloat(calcRSI(closes));
+        const closes = obj.map(candle => parseFloat(candle[4]))
+        let rsi = calcRSI(closes);
         console.log(rsi);
         
-
     }
     
 }

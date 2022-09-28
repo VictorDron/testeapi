@@ -42,7 +42,6 @@
     flex: 20%;
     height: 10%;
     text-align: center;
-    background: rgb(191, 191, 236);
     border: 1px solid rgb(73, 54, 117);
 }
 
@@ -54,10 +53,11 @@
     margin-right: 5%;
     height: 80px;
     border: 1px solid rgb(62, 180, 184);
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .symbol{
+    
    flex: 20%;
    height: 30%;
    text-align: center;
@@ -65,12 +65,14 @@
 }
 
 .frame{
+
     flex: 20%;
     height: 30%;
     text-align: center;
     border: 1px solid black ;
 }
 .rsi{
+
     flex: 20%;
     height: 30%;
     text-align: center;
@@ -78,9 +80,41 @@
 }
 
 .price{
+
     flex: 20%;
     height: 30%;
     text-align: center;
     border: 1px solid black ;
 }
 
+#img_base{
+
+    display: flex;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+#img_eth{
+    
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    border-radius:  100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#eth_img{
+    
+   width: 50px;
+   height: 100px;
+   
+}

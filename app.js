@@ -40,20 +40,18 @@ async function cot () {
 
         if (rsi < 18) {
 
-           document.getElementById('rsi1').style.backgroundColor ='green';
+           document.getElementById('img_eth').style.backgroundColor ='green';
 
+        }else{
+            document.getElementById('img_eth').style.backgroundColor = 'yellow';
         }
 
         if (rsi > 50) {
-            document.getElementById('rsi1').style.backgroundColor ='red';
+            document.getElementById('img_eth').style.backgroundColor ='red';
             
+        }else{
+            document.getElementById('img_eth').style.backgroundColor = 'yellow';
         }
-
-        
-
-        
-
-       
     }
     
 }

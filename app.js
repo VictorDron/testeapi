@@ -38,7 +38,7 @@ async function cot () {
         var buy = [0];
         var sell = [0];
 
-        if (rsi < 18) {
+        if (rsi < 15) {
 
            document.getElementById('img_eth').style.backgroundColor ='green';
 

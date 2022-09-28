@@ -33,6 +33,7 @@ async function cot () {
         const closes = obj.map(candle => parseFloat(candle[4]))
         let rsi = calcRSI(closes);
         console.log(rsi);
+        document.getElementById('rsia').innerHTML = rsi;
         
     }
     

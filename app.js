@@ -34,12 +34,13 @@ async function cot () {
         let rsi = parseFloat(calcRSI(closes).toFixed(2));
         console.log(rsi);
         document.getElementById('rsia').innerHTML = rsi+'%';
+        
 
-        if (rsi <= 20.00) {
+        if (rsi < 18.00) {
            document.getElementById('rsi1').style.backgroundColor ='green';
         }
 
-        if (rsi >= 60.00) {
+        if (rsi > 60.00) {
             document.getElementById('rsi1').style.backgroundColor ='red';
         }
 

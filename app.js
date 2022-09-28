@@ -31,10 +31,19 @@ async function cot () {
         document.getElementById('texto2').innerHTML = price0;
         
         const closes = obj.map(candle => parseFloat(candle[4]))
-        let rsi = calcRSI(closes);
+        let rsi = parseFloat(calcRSI(closes).toFixed(2));
         console.log(rsi);
-        document.getElementById('rsia').innerHTML = rsi;
-        
+        document.getElementById('rsia').innerHTML = rsi+'%';
+
+        if (rsi <= 20.00) {
+           document.getElementById('rsi1').style.backgroundColor ='green';
+        }
+
+        if (rsi >= 60.00) {
+            document.getElementById('rsi1').style.backgroundColor ='red';
+        }
+
+       
     }
     
 }

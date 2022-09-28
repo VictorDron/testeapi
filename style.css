@@ -26,13 +26,13 @@
     border: 1px solid blueviolet;
     text-align: center;
 }
-.rsi1{
+#rsi1{
 
     flex: 20%;
     height: 10%;
     border: 1px solid rgb(182, 96, 96);
     text-align: center;
-    color: #8a8abb;
+    color: #2e2ebe;
 }
 
 .price1{

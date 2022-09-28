@@ -3,7 +3,7 @@ function calcRSI(closes) {
     let gains = 0;
     let losses = 0;
     
-    for(let i = closes.length - 10; i < closes.length; i++){
+    for(let i = closes.length - 12; i < closes.length; i++){
         const diff = closes[i] - closes [i - 1];
         if (diff >= 0)
            gains += diff;

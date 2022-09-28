@@ -9,32 +9,33 @@
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    height: 250px;
+    height: 15px;
     font-size: 12px;
+    background: rgb(135, 212, 135);
     
 }
 .eth{
 
     flex: 20%;
-    border: 1px solid black;
     height: 10%;
     text-align: center;
+    /* border: 1px solid black; */
     
 }
 .time{
 
     flex: 20%;
     height: 10%;
-    border: 1px solid blueviolet;
     text-align: center;
+    /* border: 1px solid blueviolet; */
 }
 #rsi1{
 
     flex: 20%;
     height: 10%;
-    border: 1px solid rgb(182, 96, 96);
     text-align: center;
     color: #0a0a0a;
+    /* border: 1px solid rgb(182, 96, 96); */
 }
 
 .price1{
@@ -42,7 +43,7 @@
     flex: 20%;
     height: 10%;
     text-align: center;
-    border: 1px solid rgb(73, 54, 117);
+    /* border: 1px solid rgb(73, 54, 117); */
 }
 
 #container_title{
@@ -51,9 +52,11 @@
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    height: 80px;
-    border: 1px solid rgb(62, 180, 184);
+    margin-bottom: 1%;
+    height: 15px;
+    /* border: 1px solid rgb(62, 180, 184); */
     font-size: 10px;
+    background: rgb(120, 120, 170);
 }
 
 .symbol{
@@ -61,7 +64,7 @@
    flex: 20%;
    height: 30%;
    text-align: center;
-   border: 1px solid black ;
+   /* border: 1px solid black ; */
 }
 
 .frame{
@@ -69,14 +72,14 @@
     flex: 20%;
     height: 30%;
     text-align: center;
-    border: 1px solid black ;
+    /* border: 1px solid black ; */
 }
 .rsi{
 
     flex: 20%;
     height: 30%;
     text-align: center;
-    border: 1px solid black ;
+    /* border: 1px solid black ; */
 }
 
 .price{
@@ -84,7 +87,7 @@
     flex: 20%;
     height: 30%;
     text-align: center;
-    border: 1px solid black ;
+    /* border: 1px solid black ; */
 }
 
 #img_base{
@@ -96,7 +99,7 @@
     height: 300px;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
@@ -105,7 +108,7 @@
     display: flex;
     width: 200px;
     height: 200px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     border-radius:  100%;
     justify-content: center;
     align-items: center;

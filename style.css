@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 #container_numbers{
 
@@ -9,41 +10,46 @@
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    height: 15px;
+    height: 30px;
     font-size: 12px;
-    background: rgb(135, 212, 135);
+    background: rgb(80, 206, 97);
     
 }
+#container_numbers h3{
+    margin-top: 3%;
+
+}
+
 .eth{
 
     flex: 20%;
-    height: 10%;
+    height: 100%;
     text-align: center;
-    /* border: 1px solid black; */
+    border-right: 1px solid rgb(255, 255, 255);
     
 }
 .time{
 
     flex: 20%;
-    height: 10%;
+    height: 100%;
     text-align: center;
-    /* border: 1px solid blueviolet; */
+    border-right: 1px solid rgb(255, 255, 255);
 }
 #rsi1{
 
     flex: 20%;
-    height: 10%;
+    height: 100%;
     text-align: center;
     color: #0a0a0a;
-    /* border: 1px solid rgb(182, 96, 96); */
+    border-right: 1px solid rgb(255, 255, 255);
 }
 
 .price1{
 
     flex: 20%;
-    height: 10%;
+    height: 100%;
     text-align: center;
-    /* border: 1px solid rgb(73, 54, 117); */
+    border-right: 1px solid rgb(255, 255, 255);
 }
 
 #container_title{
@@ -52,42 +58,46 @@
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 1%;
-    height: 15px;
+    margin-bottom: 0.5%;
+    height: 30px;
     /* border: 1px solid rgb(62, 180, 184); */
-    font-size: 10px;
-    background: rgb(120, 120, 170);
+    font-size: 12px;
+    background: rgb(120, 160, 170);
 }
 
 .symbol{
     
    flex: 20%;
-   height: 30%;
+   height: 100%;
    text-align: center;
-   /* border: 1px solid black ; */
+   padding: 1%;
+   border-right: 1px solid rgb(255, 255, 255);
 }
 
 .frame{
 
     flex: 20%;
-    height: 30%;
+    height: 100%;
     text-align: center;
-    /* border: 1px solid black ; */
+    padding: 1%;
+    border-right: 1px solid rgb(255, 255, 255);
 }
 .rsi{
 
     flex: 20%;
-    height: 30%;
+    height: 100%;
     text-align: center;
-    /* border: 1px solid black ; */
+    padding: 1%;
+    border-right: 1px solid rgb(255, 255, 255);
 }
 
 .price{
 
     flex: 20%;
-    height: 30%;
+    height: 100%;
     text-align: center;
-    /* border: 1px solid black ; */
+    padding: 1%;
+    border-right: 1px solid rgb(255, 255, 255);
 }
 
 #img_base{
@@ -120,4 +130,35 @@
    width: 50px;
    height: 100px;
    
+}
+.options{
+
+    width: 90%;
+    height: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    text-align: center;
+ 
+}
+
+.options a{
+    
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 16px;
+  margin-bottom: 5%;
+
+}
+
+.options a:hover{
+
+    background-color: white;
+    border-top: 2px solid #00ff08;
+    font-size: 18px;
+
 }

@@ -122,6 +122,7 @@
     border-radius:  100%;
     justify-content: center;
     align-items: center;
+    background-color: aqua;
     
 }
 
@@ -129,6 +130,7 @@
     
    width: 50px;
    height: 100px;
+   
    
 }
 .options{

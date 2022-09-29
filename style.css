@@ -162,3 +162,14 @@
     font-size: 18px;
 
 }
+
+.order{
+
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    height: 25px;
+    text-align: center;
+    
+}

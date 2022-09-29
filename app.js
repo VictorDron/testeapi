@@ -41,14 +41,19 @@ async function cot () {
         if (rsi < 15) {
 
            document.getElementById('img_eth').style.backgroundColor ='green';
+           document.getElementById('order').style.color ='green';
+           document.getElementById('order').innerHTML ='BUY';
 
         }else{
             document.getElementById('img_eth').style.backgroundColor = 'yellow';
+            document.getElementById('order').style.color = 'yellow';
+            document.getElementById('order').innerHTML = 'CALCULATING...';
         }
 
-        if (rsi > 55) {
+        if (rsi > 65) {
             document.getElementById('img_eth').style.backgroundColor ='red';
-            
+            document.getElementById('order').style.color ='red';
+            document.getElementById('order').innerHTML = 'SELL';   
         }
     }
     

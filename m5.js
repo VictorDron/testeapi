@@ -18,7 +18,7 @@ function calcRSI(closes) {
 async function cot () {
     
     const ajax = new XMLHttpRequest();
-    ajax.open('GET', 'https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1m');
+    ajax.open('GET', 'https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=5m');
     ajax.send();
 
     
